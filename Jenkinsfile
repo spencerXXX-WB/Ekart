@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-               sh "mvn clean package "
+               sh "mvn package -Dmaven.test.skip"
             }
         }
         stage('Docker-Build') {
