@@ -18,7 +18,7 @@ pipeline {
             steps {
                script{
                 withDockerRegistry(credentialsId: 'DockerCred'){
-                     sh 'docker build -t spencerxxxwb/ekart:v1 -f docker/Dockerfile.'
+                     sh 'docker build -t spencerxxxwb/ekart:v1 -f docker/Dockerfile .'
                     }
                 }
             }
